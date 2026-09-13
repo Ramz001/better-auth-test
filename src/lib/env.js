@@ -18,6 +18,15 @@ const envSchema = z.object({
       (value) => /^postgres(ql)?:\/\/.+/i.test(value),
       'DATABASE_URL must be a valid postgres:// or postgresql:// connection string',
     ),
+  // Better Auth URL
+  BETTER_AUTH_URL: z
+    .url({ error: 'BETTER_AUTH_URL is required' })
+    .min(1, 'BETTER_AUTH_URL cannot be empty'),
+
+  // Better Auth Secret
+  BETTER_AUTH_SECRET: z
+    .string({ error: 'BETTER_AUTH_SECRET is required' })
+    .min(1, 'BETTER_AUTH_SECRET cannot be empty'),
 });
 
 const { data: env, error } = envSchema.safeParse(process.env);

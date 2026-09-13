@@ -12,11 +12,15 @@
     "db:pull": "drizzle-kit pull",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "auth:generate": "pnpm dlx auth generate",
+    "auth:migrate": "pnpm dlx auth migrate",
+    "auth:studio": "pnpm dlx auth studio"
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",
     "@phosphor-icons/react": "^2.1.10",
+    "better-auth": "^1.7.4",
     "class-variance-authority": "^0.7.1",
     "cn": "^0.3.0",
     "dotenv": "^17.4.2",
