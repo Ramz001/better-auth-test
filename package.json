@@ -6,14 +6,23 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:studio": "drizzle-kit studio",
+    "db:push": "drizzle-kit push",
+    "db:pull": "drizzle-kit pull",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",
     "@phosphor-icons/react": "^2.1.10",
     "class-variance-authority": "^0.7.1",
     "cn": "^0.3.0",
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "1.0.0-rc.4",
     "next": "16.3.5",
+    "pg": "^8.23.0",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "shadcn": "^4.21.0",
@@ -23,8 +32,10 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "babel-plugin-react-compiler": "1.0.0",
+    "drizzle-kit": "1.0.0-rc.4",
     "eslint": "^9",
     "eslint-config-next": "16.3.5",
+    "prettier": "^3.9.6",
     "tailwindcss": "^4"
   }
 }
