@@ -13,7 +13,7 @@ import {
   getDefaultClassNames,
   type Locale,
 } from 'react-day-picker';
-import { Button, buttonVariants } from '@/components/primitive/button';
+import { Button, buttonVariants } from '@/components/primitives/button';
 
 function Calendar({
   className,

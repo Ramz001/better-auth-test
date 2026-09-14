@@ -1,4 +1,4 @@
-import { Toaster } from '@/components/primitive/toast';
+import { Toaster } from '@/components/primitives/toast';
 
 export default function RootProvider({
   children,

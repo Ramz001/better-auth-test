@@ -11,7 +11,7 @@ import {
 } from '@phosphor-icons/react';
 import { cn } from 'cn';
 import type * as React from 'react';
-import { Button } from '@/components/primitive/button';
+import { Button } from '@/components/primitives/button';
 
 const toast = ToastPrimitive.createToastManager();
 
