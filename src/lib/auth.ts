@@ -14,7 +14,7 @@ import { haveIBeenPwned } from 'better-auth/plugins';
 import { lastLoginMethod } from 'better-auth/plugins';
 import { multiSession } from 'better-auth/plugins';
 
-export const auth = betterAuth({
+const auth = betterAuth({
   database: drizzleAdapter(db, {
     provider: 'pg', // or "mysql", "sqlite"
   }),
@@ -52,3 +52,4 @@ export const auth = betterAuth({
     nextCookies(),
   ],
 });
+export default auth;
