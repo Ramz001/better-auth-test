@@ -1,18 +1,20 @@
 import { betterAuth } from 'better-auth';
 import { drizzleAdapter } from 'better-auth/adapters/drizzle';
-import db from './db';
 import { nextCookies } from 'better-auth/next-js';
-import { twoFactor } from 'better-auth/plugins';
-import { anonymous } from 'better-auth/plugins';
-import { magicLink } from 'better-auth/plugins';
-import { emailOTP } from 'better-auth/plugins';
-import { admin } from 'better-auth/plugins';
-import { organization } from 'better-auth/plugins';
-import { openAPI } from 'better-auth/plugins';
-import { testUtils } from 'better-auth/plugins';
-import { haveIBeenPwned } from 'better-auth/plugins';
-import { lastLoginMethod } from 'better-auth/plugins';
-import { multiSession } from 'better-auth/plugins';
+import {
+  admin,
+  anonymous,
+  emailOTP,
+  haveIBeenPwned,
+  lastLoginMethod,
+  magicLink,
+  multiSession,
+  openAPI,
+  organization,
+  testUtils,
+  twoFactor,
+} from 'better-auth/plugins';
+import db from './db';
 
 const auth = betterAuth({
   database: drizzleAdapter(db, {
