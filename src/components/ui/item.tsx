@@ -1,3 +1,5 @@
+/** biome-ignore-all lint/a11y/useSemanticElements: <explanation blah> */
+/** biome-ignore-all lint/a11y/useFocusableInteractive: <explanation blah> */
 import { mergeProps } from '@base-ui/react/merge-props';
 import { useRender } from '@base-ui/react/use-render';
 import { cva, type VariantProps } from 'class-variance-authority';

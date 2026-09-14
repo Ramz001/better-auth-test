@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/a11y/noLabelWithoutControl: <explanation blah> */
 'use client';
 
 import { cn } from 'cn';
