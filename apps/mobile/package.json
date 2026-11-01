@@ -38,8 +38,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "expo lint",
-    "expo:check": "expo install --check",
-    "expo:fix": "expo install --fix"
+    "expo:check": "pnpm dlx expo@58 install --check",
+    "expo:fix": "pnpm dlx expo@58 install --fix"
   },
   "private": true
 }
